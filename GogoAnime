@@ -1,0 +1,17 @@
+import { Handheld } from "../src/Models";
+
+export class GogoAnime implements Handheld {
+    name: string = "GogoAnime";
+    
+    version: number = 1.0;
+
+     getEpisodes = async (): Promise<string> => {
+        return "Episodes link";
+    }
+
+    getSearch = async (): Promise<Array<string>> => {
+        return ["This is a test link", "Second test link"]
+    }
+   
+    
+}
