@@ -2,8 +2,9 @@
 import { Handheld } from "../src/Models";
 
 
-name = GogoAnime().name;
-getEpisodes = GogoAnime().getEpisodes()
+
+name = () => GogoAnime().name;
+getEpisodes = () => GogoAnime().getEpisodes()
 
 export class GogoAnime extends Handheld {
     name = "GogoAnime"
